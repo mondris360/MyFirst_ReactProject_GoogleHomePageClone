@@ -7,14 +7,15 @@ class Language extends Component {
         const languagesInfo = this.props.languages;
         const languages =  languagesInfo.map((language, index) => {
             return <span style={linkStyle} key={ index }> <Link to={"/" + language}>{ language }</Link></span>
-        })
+        });
+
         return (
             <Router>
                 <div style={cssStyle}>
                     <span style={ textStyle }>Google offered in:</span>
                     { languages }
                 </div>
-          </Router>
+            </Router>
         )
        
     }
