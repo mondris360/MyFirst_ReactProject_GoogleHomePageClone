@@ -9,7 +9,14 @@ import Translations from './Translations';
 
 class MainContent extends Component {
     render(){
-        const buttonsText = ["Google Search", "I'm Feeling Lucky"]
+        const buttonsText = [{
+            id: "googleSearch",
+            btnText: "Google Search"
+        },
+        {  id:"feelingLucky",
+            btnText: "I'm Feeling Lucky"
+        }]
+
         return (
             <div style={mainContentStyle}>
                 <MainLogo src={mainLogo} />

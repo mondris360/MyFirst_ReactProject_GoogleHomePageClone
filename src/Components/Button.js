@@ -6,8 +6,8 @@ class Button  extends Component {
 
     render(){
         const buttonsText = this.props.buttonsText;
-        const buttons = buttonsText.map( buttonText => {
-            return <button style={ btnStyle }>{buttonText}</button>
+        const buttons = buttonsText.map( buttonInfo => {
+            return <button id={buttonInfo.id} style={ btnStyle }>{buttonInfo.btnText}</button>
         })
         return (
             <div style={divStyle}>

@@ -6,7 +6,7 @@ class MainLogo extends Component  {
 
     render(){
         return (
-            <img style={imageStyle} src={this.props.src}  alt="menu icon"/>
+            <img id="mainLogo" style={imageStyle} src={this.props.src}  alt="menu icon"/>
         )
     }
 }
