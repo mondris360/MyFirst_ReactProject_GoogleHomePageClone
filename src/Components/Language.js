@@ -22,7 +22,7 @@ class Language extends Component {
 }
 
 const cssStyle ={
-   marginLeft: '650px',
+   marginLeft: '715px',
 }
 
 const textStyle = {
