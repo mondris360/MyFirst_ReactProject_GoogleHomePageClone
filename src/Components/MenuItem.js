@@ -6,7 +6,7 @@ class MenuItem extends Component {
     render(){
         const menuData = this.props.menuData;
         let menuItems = menuData.map( menuInfo => {
-            return <li style ={liStyles} className='menuText'> <Link to={menuInfo.link}>{menuInfo.name}</Link></li> 
+            return <li key={menuInfo.id}style ={liStyles}> <Link to={menuInfo.link}>{menuInfo.name}</Link></li> 
         });
         return (
             <Router>

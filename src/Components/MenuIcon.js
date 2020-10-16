@@ -5,7 +5,7 @@ class MenuIcon extends Component {
     render(){
         const iconsData =  this.props.menuIcons;
         const menuIcons =  iconsData.map(menuIcon => {
-            return <li styles={liStyles}><Link to={menuIcon.link}><img src={ menuIcon.icon } alt="menu icon" height="23px"/> </Link></li>
+            return <li key={menuIcon.id} styles={liStyles}><Link to={menuIcon.link}><img id={menuIcon.id} src={ menuIcon.icon } alt="menu icon" height="23px"/> </Link></li>
         });
         return (
             <Router>
@@ -16,8 +16,6 @@ class MenuIcon extends Component {
         )
     }
 }
-
-
 // css styles
 const ulStyles={
     marginTop:'-188px',

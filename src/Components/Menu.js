@@ -9,21 +9,27 @@ class Menu extends Component {
         const menuData = [
         { 
             name: "Gmail",
-            link:"/gmail"
+            link:"/gmail",
+            id:"gmail"
+            
         },
         { 
             name: "Images",
-            link:"/image"
+            link:"/image",
+            id:"/image"
+            
         }];
 
         const menuIcons = [
         { 
             icon: icon1,
-            link:"/gmail"
+            link:"/gmail",
+            id:"gmail"
         },
         { 
             icon: icon2,
-            link:"/image"
+            link:"/image",
+            id: "image"
         }];
         return (
             <div className="menu">  
